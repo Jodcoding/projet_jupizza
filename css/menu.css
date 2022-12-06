@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/pizza6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p {
+    width: 1.8em;
+    color: white;
+}
+
+.logo>img {
+    width: 12%;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li a {
+    width: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(209, 34, 34);
+}
+
+.ckbtn {
+    margin-right: 10px;
+    position: absolute;
+    right: 0px;
+}
+
+#check,
+.ckbtn {
+    display: none;
+}
+
+label span {
+    display: block;
+    background-color: white;
+    width: 25px;
+    margin: 5px auto;
+    height: 3px;
+}
+
+table{
+    border-collapse: collapse;
+    
+    margin: 0 auto;
+    margin-top: 6%;
+    width: 90%;
+    height: 60%;
+}
+table caption{
+    height: 15%;
+    background-color: red;
+    color: white;
+}
+table th{
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+
+table td{
+    color: white;
+    background-color: red;
+}
+td, caption, th{border: 1px solid black;}
+
+@media screen and (max-width: 600px) {
+
+   .ckbtn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        top: 9.7%;
+        left: -100%;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: rgb(209, 34, 34, .6);
+    }
+
+
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        gap: 7%;
+    }
+    
+     td, caption, th{border: 1px solid black;}
+
+    .menu li a {
+        color: white;
+    }
+
+    #check:checked~.menu {
+        left: 0;
+    }
+
+    #check:checked~.ckbtn span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #check:checked~.ckbtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #check:checked~.ckbtn span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.jpg" alt="">
+            <p>JUPizza</p>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="ckbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li><a href="maisons.html">Maisons</a></li>
+            <li><a href="loisir.html">Loisir</a></li>
+        </ul>
+
+    </header>
+    <form action="">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="nom">Nom: </label></td>
+                    <td><input type="text" maxlength="8" placeholder="Entrez votre nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">Prénom: </label></td>
+                    <td><input type="text" maxlength="16" placeholder="Entrez votre prénom"></td>
+                </tr>
+                <tr>
+                    <td> <label for="password">Mot-de-passe: </label></td>
+                    <td> <input type="password" placeholder="Entrez votre mot-de-passe"></td>
+                </tr>
+                <tr>
+                    <td> <label for="email">E-mail: </label></td>
+                    <td> <input type="mail" placeholder="Entrez votre email"></td>
+                </tr>
+                <tr>
+                    <td> <label for="paiement">Paiement: </label></td>
+                    <td> <input type="radio" name="paiement"><span>MasterCard</span> <input type="radio" name="paiement"><span>PayPal</span></td>
+                </tr>
+                <tr>
+                    <td><label for="utilisateur">Type de pizza: </label></td>
+                    <td>
+                        <select name="" id="selection">
+                            <option value="premiere">Pizza harang</option>
+                            <option value="deuxieme">Pizza rustique</option>
+                            <option value="troisieme">Pizza la nordique</option>
+                            <option value="quatrieme">Pizza vendeenne</option>
+                            <option value="quatrieme">Pizza kebab</option>
+                            <option value="quatrieme">Pizza chevrette</option>
+                            <option value="quatrieme">Pizza végétarienne</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
